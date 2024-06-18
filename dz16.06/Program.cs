@@ -179,6 +179,38 @@ namespace dz16._06
                 Console.WriteLine();
             }
         }
+        static void hard_chess()
+        {
+            Console.WriteLine("Введите размер доски: ");
+            uint size = Convert.ToUInt32(Console.ReadLine());
+            for (int i = 0; i < size ; i++)                //глобал строки
+            {
+                for (int j = 0;j < size; j++)              //глобал стобцы
+                {
+                    for (int k = 0; k < size; k++)  //отрисовка каждой строки
+                    {
+                        for (int l = 0; l < size; l++)     //отрисовка клеток построчно
+                        {
+                            if (i % 2 == 0)
+                            {
+                                Console.Write("* ");
+                            }
+                            //else Console.Write(' ');
+                        }
+                        for (int m = 0; m < size; m++)     //same as prev
+                        {
+                            if (i % 2 == 0)
+                            {
+                                Console.Write("  ");
+                            }
+                        //else Console.Write('*');
+                        }
+                    }
+                        Console.WriteLine();
+                }
+            }
+        }
+
         static void Main(string[] args)
         {
             Console.WriteLine("https://github.com/okovtun/BV_011/blob/master/ControlStructures/Geometria/Task/Geometria1.txt");
@@ -192,6 +224,7 @@ namespace dz16._06
             //ascii_table();
             Console.WriteLine("https://github.com/okovtun/BV_011/blob/master/ControlStructures/Geometria/Task/ChessBoard.jpg");
             chess_board();
+            hard_chess();
             
 
 
