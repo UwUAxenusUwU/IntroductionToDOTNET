@@ -26,7 +26,11 @@ namespace DataTypes
             Console.WriteLine($"Диапозон принимаемых значений: {uint.MinValue} .... {uint.MaxValue}");
             Console.WriteLine(delimiter); 
 #endif
-
+            int a = 2;
+            uint b = 3;
+            //a = b;
+            a = (int)b;
+            Console.WriteLine(a + b);
         }
     }
 }

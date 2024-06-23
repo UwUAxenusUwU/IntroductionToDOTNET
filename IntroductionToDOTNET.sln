@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataTypes", "DataTypes\Data
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "calc", "calc\calc.csproj", "{A6ECE221-5863-4E21-B57F-142CB2759CE4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recursion", "Recursion\Recursion.csproj", "{BAFDD232-C8CF-4646-AEFF-A44F3657223D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{A6ECE221-5863-4E21-B57F-142CB2759CE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6ECE221-5863-4E21-B57F-142CB2759CE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6ECE221-5863-4E21-B57F-142CB2759CE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAFDD232-C8CF-4646-AEFF-A44F3657223D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAFDD232-C8CF-4646-AEFF-A44F3657223D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAFDD232-C8CF-4646-AEFF-A44F3657223D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAFDD232-C8CF-4646-AEFF-A44F3657223D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
