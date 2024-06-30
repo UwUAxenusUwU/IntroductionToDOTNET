@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigInteger factorial", "Big
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "calc_class", "calc_class\calc_class.csproj", "{70C8B676-26A4-4099-A6AD-378D4879EF2D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "x0_recursion", "x0_recursion\x0_recursion.csproj", "{BA55B557-71E6-461A-BF8F-52FA7A19D576}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{70C8B676-26A4-4099-A6AD-378D4879EF2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{70C8B676-26A4-4099-A6AD-378D4879EF2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{70C8B676-26A4-4099-A6AD-378D4879EF2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA55B557-71E6-461A-BF8F-52FA7A19D576}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA55B557-71E6-461A-BF8F-52FA7A19D576}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA55B557-71E6-461A-BF8F-52FA7A19D576}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA55B557-71E6-461A-BF8F-52FA7A19D576}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
