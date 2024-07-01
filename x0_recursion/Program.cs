@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace x0_recursion
@@ -52,14 +53,14 @@ namespace x0_recursion
                     //arr[i,j] = turn_x ? 'x' : 'o';
                     unique = true;
                     //turn_x = !turn_x;
-                    Console.WriteLine($" i = {i}, j = {j} {turn}");
+                    //Console.WriteLine($" i = {i}, j = {j} {turn}");
                 }
             }
         }
         static char game(char[,] arr)
         {
             bool end = false;
-            //Console.Clear();
+            Console.Clear();
             bot_set(arr);
             draw(arr);
             for (int i = 0;i < 3; i++)
@@ -71,6 +72,7 @@ namespace x0_recursion
                     }
                     else end = true;
             }
+            Thread.Sleep(500);
             while (!end) return game(arr);
             return ' ';
         }
