@@ -9,6 +9,7 @@ namespace x0_recursion
 {
     internal class Program
     {
+        static int turn = 0;
         static void start(char[,] arr)
         {
             for (int i = 0; i < 3; i++)
@@ -32,9 +33,10 @@ namespace x0_recursion
                 Console.WriteLine();
             }
         }
-        static void bot_set(char[,] arr, bool turn_x)
+        static void bot_set(char[,] arr)
         {
             bool unique = false;
+
             while (unique == false)
             {
                 Random rnd = new Random();
@@ -42,29 +44,34 @@ namespace x0_recursion
                 int j = rnd.Next(0,3);
                 if (arr[i, j] == '*')
                 {
-                    arr[i,j] = turn_x ? 'x' : 'o';
+                    if (turn % 2 == 0) { arr[i, j] = 'x'; turn++; }
+                    else
+                    {
+                        arr[i, j] = 'o'; turn++;
+                    }
+                    //arr[i,j] = turn_x ? 'x' : 'o';
                     unique = true;
-                    Console.WriteLine($" i = {i}, j = {j} {turn_x}");
+                    //turn_x = !turn_x;
+                    Console.WriteLine($" i = {i}, j = {j} {turn}");
                 }
             }
-            turn_x = !turn_x;
         }
-        static char game(char[,] arr, bool turn_x)
+        static char game(char[,] arr)
         {
             bool end = false;
-            Console.Clear();
-            bot_set(arr, turn_x);
+            //Console.Clear();
+            bot_set(arr);
             draw(arr);
             for (int i = 0;i < 3; i++)
             {
                 for (int j = 0; j < 3; j++)
                     if (arr[i, j] == '*')
                     {
-                        end = false;
+                        end = false; break;
                     }
                     else end = true;
             }
-            while (!end) return game(arr, turn_x);
+            while (!end) return game(arr);
             return ' ';
         }
         //static bool logic(char[,] arr, bool gameover)
@@ -82,9 +89,8 @@ namespace x0_recursion
         static void Main(string[] args)
         {
             char[,] arr = new char [3,3];
-            bool turn_x = true;
             start(arr);
-            game(arr, turn_x);
+            game(arr);
 
         }
     }
